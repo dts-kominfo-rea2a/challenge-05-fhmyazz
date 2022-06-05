@@ -8,7 +8,11 @@ const names = ["Halo", "Angel", "Nyoman", "Ketut", "Aisyah"];
 // ...
 const sorter = function(paramData, paramFn){
   sortedData = paramFn(paramData);
-  return sortedData;
+  arrTemp = [];
+  for(counter = 0; counter < paramData.length; counter++){
+    arrTemp.push((counter+1) + ". " + paramData[counter])
+  }
+  return arrTemp;
 };
 
 // TODO: Fungsi untuk mengurutkan array of string secara ascending
